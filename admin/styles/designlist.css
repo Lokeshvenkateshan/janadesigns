@@ -1,0 +1,128 @@
+.admin-container {
+  max-width: 1000px;
+  margin: 40px auto;
+}
+.designlist-title{
+  font-size: 1.7rem;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+  position: relative;
+  display: inline-block;
+}
+.designlist-title::after{
+  content: '';
+  display: block;
+  width: 80%;
+  height: 3px;
+  background-color: #c8d479;
+  margin: 5px auto 0;
+  border-radius: 2px;
+}
+
+.center-text {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.error-text {
+  color: red;
+}
+
+.design-group {
+  margin-bottom: 40px;
+}
+.type-title{
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+  color: var(--primary-color);
+  position: relative;
+  display: inline-block;
+}
+.type-title::after{
+  content: '';
+  display: block;
+  width: 90%;
+  height: 3px;
+  background-color: #c8d479;
+  margin: 3px auto 0;
+  border-radius: 2px;
+}
+.design-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.design-table thead tr {
+  border-bottom: 2px solid #ccc;
+}
+
+.design-table th,
+.design-table td {
+  padding: 10px;
+  vertical-align: top;
+  text-align: left;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.design-table th {
+  text-align: left;
+}
+
+.design-table td:nth-child(1),  
+.design-table th:nth-child(1) {
+  max-width: 200px;
+  width: 200px;
+}
+.design-table td:nth-child(2), 
+.design-table th:nth-child(2) {
+  max-width: 300px;
+  width: 300px;
+}
+.design-table td:nth-child(3),  
+.design-table th:nth-child(3),
+.design-table td:nth-child(4),  
+.design-table th:nth-child(4) {
+  width: 100px;
+  text-align: center;
+}
+
+.design-table tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+.design-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #c0392b;
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.delete-btn:hover {
+  color: #e74c3c;
+}
+
+.delete-message {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+}
+.designlist-title{
+  margin-bottom: 20px;
+}
