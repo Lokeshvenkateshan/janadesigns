@@ -1,4 +1,7 @@
 import FlagshipWorkModule from './FlagshipWorkModule';
+import wall from '../images/wallpaper.jpg';
+import wing from '../images/pngwing.com.png';
+import putta from '../images/putta.png';
 import React from 'react'
 
 
@@ -6,17 +9,17 @@ const FlagshipWork = () => {
 
     const flagshipWorks = [
   {
-    image: '../images/wallpaper.jpg',
+    image: {wall},
     title: 'Exquisite Silk Saree Collection',
     description: 'Handwoven silk sarees crafted with intricate patterns and vibrant colors. Perfect for every special occasion, these designs embody tradition and elegance.',
   },
   {
-    image: '../images/pngwing.com.png',
+    image: {wing},
     title: 'Elegant Kanchipuram Silks',
     description: 'Traditional Kanchipuram silk sarees with rich zari borders and vibrant hues, ideal for weddings and festivals.',
   },
   {
-    image: '../images/putta.png',
+    image: {putta},
     title: 'Modern Fusion Saree Designs',
     description: 'Innovative designs combining traditional weaving techniques with contemporary styles for the fashion-forward.',
   },
