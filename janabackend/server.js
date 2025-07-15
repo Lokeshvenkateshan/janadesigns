@@ -14,7 +14,7 @@ const port = process.env.PORT || 5001;
 connectDb();
 app.use(express.json());
 
-const allowedOrigins = ['http://localhost:5173', 'http://localhost:5174', 'https://janadesigns.vercel.app'];
+const allowedOrigins = ['http://localhost:5173', 'http://localhost:5174', 'https://janadesigns.vercel.app', 'https://janadesigns-admin.vercel.app'];
 
 app.use(cors({
   origin: function (origin, callback) {
