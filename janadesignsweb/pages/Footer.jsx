@@ -28,7 +28,7 @@ const Footer = () => {
             <a href="https://facebook.com/janadesigns" target="_blank" rel="noreferrer"><FaFacebookF /></a>
             <a href="https://instagram.com/janadesigns" target="_blank" rel="noreferrer"><FaInstagram /></a>
             <a href="https://twitter.com/janadesigns" target="_blank" rel="noreferrer"><FaTwitter /></a>
-            <a href="https://linkedin.com/company/janadesigns" target="_blank" rel="noreferrer"><FaLinkedinIn /></a>
+            {/* <a href="https://linkedin.com/company/janadesigns" target="_blank" rel="noreferrer"><FaLinkedinIn /></a> */}
           </div>
         </div>
       </div>

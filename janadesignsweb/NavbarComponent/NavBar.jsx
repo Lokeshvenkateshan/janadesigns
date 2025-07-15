@@ -81,6 +81,8 @@ const NavBar = () => {
         <div className="menu-icon" onClick={handleMenuToggle}>
           {menuOpen ? <FaTimes size={25} /> : <FaBars size={25} />}
         </div>
+
+        
       </div>
       {/* mobile  menu */}
       {menuOpen && (
@@ -122,9 +124,7 @@ const NavBar = () => {
 
             <li onClick={handleCloseMenu}>
               <a href="#section-services" > Contact </a>
-            </li>
-
-            
+            </li> 
             
           </ul>
         </div>

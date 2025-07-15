@@ -1,7 +1,4 @@
 import FlagshipWorkModule from './FlagshipWorkModule';
-
-
-
 import React from 'react'
 
 

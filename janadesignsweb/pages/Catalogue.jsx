@@ -41,9 +41,10 @@ const Catalogue = () => {
       ScrollReveal().reveal('.design-card', {
         duration: 800,
         distance: '40px',
-        origin: 'bottom',
+        origin: 'right',
         easing: 'ease-in-out',
         interval: 100,
+        reset: true,
       });
     }
   }, [loading, error, designs]);

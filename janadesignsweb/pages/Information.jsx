@@ -26,7 +26,7 @@ const Information = () => {
       className="info-section" 
       initial="hidden" 
       whileInView="visible" 
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: false, amount: 0.3 }}
       variants={containerVariants}
     >
       <motion.h2 className="info-title" variants={itemVariants}>

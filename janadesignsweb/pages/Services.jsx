@@ -39,6 +39,7 @@ const Services = () => {
       scrollTrigger: {
         trigger: sectionRef.current,
         start: 'top 80%',
+        
       },
     });
   }, []);
@@ -54,6 +55,7 @@ const Services = () => {
               className="book-cover"
               whileHover={{ rotateY: -120 }}
               transition={{ duration: 0.8, ease: 'easeInOut' }}
+              
             >
               <img src={service.image} alt={service.title} />
               

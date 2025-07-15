@@ -198,7 +198,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .design-grid {
     flex-direction: column;
     align-items: center;
@@ -209,7 +209,27 @@
   .catalogueall-wrap{
   margin: auto 20px;
   }
+} */
+
+@media screen and (max-width: 768px) {
+  .design-grid {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .design-card {
+    width: 45%; /* roughly 2 cards per row with spacing */
+  }
+
+  .catalogue-wrap {
+    margin: auto 10px;
+  }
+
+  .catalogueall-wrap {
+    margin: auto 20px;
+  }
 }
+
 
 .back-button {
   /* margin: 0 auto 20px auto; */
