@@ -9,17 +9,17 @@ const FlagshipWork = () => {
 
     const flagshipWorks = [
   {
-    image: {wall},
+    image: wall,
     title: 'Exquisite Silk Saree Collection',
     description: 'Handwoven silk sarees crafted with intricate patterns and vibrant colors. Perfect for every special occasion, these designs embody tradition and elegance.',
   },
   {
-    image: {wing},
+    image: wing,
     title: 'Elegant Kanchipuram Silks',
     description: 'Traditional Kanchipuram silk sarees with rich zari borders and vibrant hues, ideal for weddings and festivals.',
   },
   {
-    image: {putta},
+    image: putta,
     title: 'Modern Fusion Saree Designs',
     description: 'Innovative designs combining traditional weaving techniques with contemporary styles for the fashion-forward.',
   },
