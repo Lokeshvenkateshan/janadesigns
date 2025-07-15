@@ -9,7 +9,7 @@ const contactRoute = require('./routes/contact.js');
 const adminRoutes = require('./routes/adminRoutes.js'); 
 
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 5001;
 
 connectDb();
 app.use(express.json());
@@ -24,6 +24,7 @@ app.use(cors({
       callback(new Error('Not allowed by CORS'));
     }
   },
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
 
