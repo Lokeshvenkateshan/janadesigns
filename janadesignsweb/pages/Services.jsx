@@ -75,8 +75,6 @@ const Services = () => {
 export default Services; */
 
 
-
-
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles/services.css';
 import { motion } from 'framer-motion';
@@ -136,7 +134,6 @@ const Services = () => {
           duration: 0.8,
           ease: 'power2.inOut',
           onComplete: () => {
-            // Optional: reset back
             gsap.to(cardRefs.current[index], {
               rotationY: 0,
               duration: 0.5,
