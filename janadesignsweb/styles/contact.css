@@ -78,3 +78,8 @@
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 768px){
+  .contact-title {
+  font-size: 2rem;
+  }
+}

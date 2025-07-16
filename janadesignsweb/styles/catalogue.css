@@ -208,20 +208,10 @@
 }
 
 
-/* @media screen and (max-width: 768px) {
-  .design-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-  .catalogue-wrap{
-  margin: auto 10px;
-  }
-  .catalogueall-wrap{
-  margin: auto 20px;
-  }
-} */
-
 @media screen and (max-width: 768px) {
+  .catalogue-title {
+    font-size: 2rem;
+  }
   .design-grid {
     justify-content: center;
     gap: 15px;
