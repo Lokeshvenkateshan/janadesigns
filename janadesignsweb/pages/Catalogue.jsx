@@ -114,15 +114,7 @@ const Catalogue = () => {
         <div style={{ textAlign: 'center', marginTop: '20px' }}>
           <button
             onClick={() => navigate('/alldesigns')}
-            style={{
-              padding: '10px 20px',
-              backgroundColor: '#2c4152',
-              color: '#fff',
-              border: 'none',
-              borderRadius: '5px',
-              cursor: 'pointer'
-            }}
-          >
+             className='show-more' >
             Show More Designs
           </button>
         </div>

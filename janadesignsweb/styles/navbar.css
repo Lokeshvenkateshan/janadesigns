@@ -75,10 +75,9 @@ body {
 
 .title {
   font-size: 2rem;
-  font-weight: 200;
-  font-weight: 900;
+  font-weight: 700;
   color: var(--primary-color);
-  font-family: cursive;
+  font-family: Outfit;
 }
 .menu-icon {
   display: none;
@@ -129,6 +128,10 @@ body {
 
 /* Responsive Settings */
 @media (max-width: 768px) {
+  .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  }
   .nav-list {
     display: none;
   }

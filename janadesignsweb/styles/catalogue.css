@@ -57,7 +57,8 @@
 
 .design-card {
   position: relative;
-  width: 240px;
+  /* width: 240px; */
+  width: 220px;
   height: 300px;
   border-radius: 10px;
   overflow: hidden;
@@ -118,6 +119,15 @@
   filter: brightness(40%);
 }
 
+.show-more{
+  width: 150px;
+  padding: 5px 10px;
+  background-color: #2c4152;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -219,6 +229,7 @@
 
   .design-card {
     width: 45%; /* roughly 2 cards per row with spacing */
+    height: 250px;
   }
 
   .catalogue-wrap {
@@ -227,6 +238,9 @@
 
   .catalogueall-wrap {
     margin: auto 20px;
+  }
+  .show-more{
+    width: 100px;
   }
 }
 

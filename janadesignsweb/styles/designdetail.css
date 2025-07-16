@@ -95,9 +95,14 @@
     align-items: center;
     text-align: center;
   }
+  .big-image {
+    max-width: 100%;
+    height: auto;
+  }
 
   .design-info-right {
     align-items: center;
+    width: 100%;
   }
 
   .enquire-btn {

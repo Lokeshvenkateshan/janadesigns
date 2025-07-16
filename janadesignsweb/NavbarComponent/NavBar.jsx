@@ -106,11 +106,11 @@ const NavBar = () => {
             </li>
 
             <li onClick={handleCloseMenu}>
-              <a href="#section-services" > Catalogue </a>
+              <a href="#section-catalogue" > Catalogue </a>
             </li>
 
             <li onClick={handleCloseMenu}>
-              <a href="#section-services" > Flagship </a>
+              <a href="#section-flagship" > Flagship </a>
             </li>
 
             <li onClick={handleCloseMenu}>
@@ -123,7 +123,7 @@ const NavBar = () => {
           </li>
 
             <li onClick={handleCloseMenu}>
-              <a href="#section-services" > Contact </a>
+              <a href="#section-contact" > Contact </a>
             </li> 
             
           </ul>

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+/* import React, { useEffect, useRef } from 'react';
 import '../styles/services.css';
 import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
@@ -60,6 +60,93 @@ const Services = () => {
               <img src={service.image} alt={service.title} />
               
               
+            </motion.div>
+            <div className="book-content">
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Services; */
+
+import React, { useEffect, useRef, useState } from 'react';
+import '../styles/services.css';
+import { motion } from 'framer-motion';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import PuttaImg from '../images/putta.png';
+import BorderImg from '../images/border.png';
+import BodyImg from '../images/body.png';
+// import { useNavigate } from 'react-router-dom'; // optional if you want navigation
+
+gsap.registerPlugin(ScrollTrigger);
+
+const services = [
+  {
+    title: 'Putta Design',
+    image: PuttaImg,
+    description: 'Detailed pixel patterns designed for body motifs and decorations on sarees.',
+  },
+  {
+    title: 'Border Design',
+    image: BorderImg,
+    description: 'Intricate border art showcasing traditional and modern weaving styles.',
+  },
+  {
+    title: 'Body Design',
+    image: BodyImg,
+    description: 'Complete body layout crafted to reflect elegance across the full saree length.',
+  },
+];
+
+const Services = () => {
+  const sectionRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
+  // const navigate = useNavigate(); // enable if using navigation
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth <= 768);
+
+    gsap.from('.book-card', {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      stagger: 0.3,
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: 'top 80%',
+      },
+    });
+  }, []);
+
+  const handleCardClick = (title) => {
+    if (isMobile) {
+      alert(`Opening ${title}...`);
+      // navigate(`/services/${title.toLowerCase()}`); // optionally route to a service detail page
+    }
+  };
+
+  return (
+    <section className="services-section" id="designs-section" ref={sectionRef}>
+      <h2 className="services-title">Our Design Services</h2>
+      <div className="books-container">
+        {services.map((service, idx) => (
+          <div
+            className="book-card"
+            key={idx}
+            onClick={() => handleCardClick(service.title)}
+          >
+            <motion.div
+              className="book-cover"
+              whileHover={isMobile ? {} : { rotateY: -120 }}
+              transition={{ duration: 0.8, ease: 'easeInOut' }}
+            >
+              <img src={service.image} alt={service.title} />
             </motion.div>
             <div className="book-content">
               <h3>{service.title}</h3>
