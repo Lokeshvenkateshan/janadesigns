@@ -74,6 +74,9 @@ const Services = () => {
 
 export default Services; */
 
+
+
+
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles/services.css';
 import { motion } from 'framer-motion';
@@ -82,7 +85,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import PuttaImg from '../images/putta.png';
 import BorderImg from '../images/border.png';
 import BodyImg from '../images/body.png';
-// import { useNavigate } from 'react-router-dom'; // optional if you want navigation
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -107,7 +109,7 @@ const services = [
 const Services = () => {
   const sectionRef = useRef(null);
   const [isMobile, setIsMobile] = useState(false);
-  // const navigate = useNavigate(); // enable if using navigation
+  const cardRefs = useRef([]);
 
   useEffect(() => {
     setIsMobile(window.innerWidth <= 768);
@@ -124,10 +126,26 @@ const Services = () => {
     });
   }, []);
 
-  const handleCardClick = (title) => {
-    if (isMobile) {
-      alert(`Opening ${title}...`);
-      // navigate(`/services/${title.toLowerCase()}`); // optionally route to a service detail page
+  const handleCardClick = (index) => {
+    if (isMobile && cardRefs.current[index]) {
+      gsap.fromTo(
+        cardRefs.current[index],
+        { rotationY: 0 },
+        {
+          rotationY: -120,
+          duration: 0.8,
+          ease: 'power2.inOut',
+          onComplete: () => {
+            // Optional: reset back
+            gsap.to(cardRefs.current[index], {
+              rotationY: 0,
+              duration: 0.5,
+              delay: 1.5,
+              ease: 'power2.out',
+            });
+          },
+        }
+      );
     }
   };
 
@@ -139,12 +157,13 @@ const Services = () => {
           <div
             className="book-card"
             key={idx}
-            onClick={() => handleCardClick(service.title)}
+            onClick={() => handleCardClick(idx)}
           >
             <motion.div
               className="book-cover"
               whileHover={isMobile ? {} : { rotateY: -120 }}
               transition={{ duration: 0.8, ease: 'easeInOut' }}
+              ref={(el) => (cardRefs.current[idx] = el)}
             >
               <img src={service.image} alt={service.title} />
             </motion.div>
