@@ -1,5 +1,5 @@
 import FlagshipWorkModule from './FlagshipWorkModule';
-import wall from '../images/wallpaper.jpg';
+import elephant from '../images/flagship/deer.bmp';
 import wing from '../images/pngwing.com.png';
 import putta from '../images/putta.png';
 import React from 'react'
@@ -9,7 +9,7 @@ const FlagshipWork = () => {
 
     const flagshipWorks = [
   {
-    image: wall,
+    image: elephant,
     title: 'Exquisite Silk Saree Collection',
     description: 'Handwoven silk sarees crafted with intricate patterns and vibrant colors. Perfect for every special occasion, these designs embody tradition and elegance.',
   },
