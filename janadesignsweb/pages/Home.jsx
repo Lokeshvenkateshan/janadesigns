@@ -54,7 +54,7 @@ const Home = () => {
       <section className="home-section">
         <div className="home-wrapper">
           <div className="home-left">
-            <h1 ref={titleRef}>Welcome to Jana Designs</h1>
+            <h1 ref={titleRef}>Hi, Welcome to Jana Designs</h1>
             <h2 ref={subtitleRef}>Elegant Silk Saree Artwork</h2>
             <p ref={aboutRef}>
               Designed by <strong>Janarthanan</strong>, a specialist in
