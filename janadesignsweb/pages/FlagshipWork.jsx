@@ -15,7 +15,7 @@ const FlagshipWork = () => {
   },
   {
     image: deer,
-    title: 'Elegant Kanchipuram Silks',
+    title: 'Elegant Saree Designs',
     description: 'Deer in saree with rich look and vibrant hues, ideal for weddings and festivals.',
   },
   {
